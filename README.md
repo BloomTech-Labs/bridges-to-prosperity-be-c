@@ -89,6 +89,9 @@ There are 3 options to get postgresql installed locally [Choose one]:
 - run: `npm run tests` to confirm all is setup and tests pass.
 - run: `npm run watch:dev` to start nodemon in local dev enviornment.
 
+> Make sure to update the details of the app name, description and version in
+> the `package.json` and `config/jsdoc.js` files.
+
 ## Contributing
 
 ### ESLint and prettier
