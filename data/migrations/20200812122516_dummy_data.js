@@ -1,6 +1,6 @@
 exports.up = (knex) => {
   return knex.schema
-  .createTable('bridges', function(table){
+    .createTable('bridges', function (table) {
       table.integer('projectcode').notNullable().unique().primary();
       table.float('GPSLat').notNullable();
       table.float('GPSlon').notNullable();
@@ -13,9 +13,9 @@ exports.up = (knex) => {
       table.string('site');
       table.string('cell');
       table.string('sector');
-  });
+    });
 };
 
-exports.down = function(knex) {
-    return knex.schema.dropTableIfExists('bridges');
+exports.down = function (knex) {
+  return knex.schema.dropTableIfExists('bridges');
 };
