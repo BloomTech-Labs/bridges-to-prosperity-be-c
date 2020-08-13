@@ -1,0 +1,80 @@
+
+    
+        {
+            "bridges" : {
+                "country": "Rwanda",
+                "province": "Western Province",
+                "district": "Rusizi",
+                "sector": "Giheke",
+                "cell": "Gakomeye",
+                "site": "Buzi",
+                "stage": "Rejected",
+                "substage": "Technical",
+                "code": 1014107,
+                "type": "Suspended",
+                "GPSLat": -2.42056,
+                "GPSLon": 28.9662
+            },
+            {
+            "bridges":{
+                "province": "Eastern Province",
+                "district": "Rwamagana",
+                "sector": "Fumbwe",
+                "cell": "Nyagasambu",
+                "site": "Rebero",
+                "stage": "Rejected",
+                "substage": "Technical",
+                "code": 1014605,
+                "type": " ",
+                "lat": -1.893193,
+                "lon": 30.280679
+            },
+            {
+            "bridges":{
+                "province": "Western Province:",
+                "district": "Rusizi",
+                "sector": "Giheke",
+                "cell": "Gakomeye",
+                "site": "Kamigisha",
+                "stage": "Rejected",
+                "substage": "Technical",
+                "code": 1014106,
+                "type": "Suspended",
+                "lat": -2.42486,
+                "lon": 28.95726
+            }
+        },
+        {
+            "bridges": [{
+                "province": "Southern Province",
+                "district": "Kamonyi",
+                "sector": "Karama",
+                "cell": "Bunyonga",
+                "site": "Bunyonga 2",
+                "stage": "Rejected",
+                "substage": "Technical",
+                "code": 1014323,
+                "type": " ",
+                "lat": -1.939927,
+                "lon": 29.818313
+            }] 
+        },
+        {
+            "bridges" : [{
+                "province": "Western Province",
+                "district": "Rulindo",
+                "sector": "Buyoga",
+                "cell": "Gahororo-Gipfundo",
+                "site": "Gipfundo",
+                "stage": "Rejected",
+                "substage": "Technical",
+                "code": 1007651,
+                "type": "Suspended",
+                "lat": -1.72053,
+                "lon": 30.08124
+                
+            }]
+        }
+        }
+
+    

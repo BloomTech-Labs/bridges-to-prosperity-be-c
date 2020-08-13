@@ -26,4 +26,16 @@ module.exports = {
     migrations: { directory: '../data/migrations' },
     seeds: { directory: '../data/seeds' },
   },
+
+  local: {
+    client: 'pg',
+    connection: {
+      user: 'postgresql',
+      password: '',
+    },
+    migrations: {
+      directory: '../data/migrations',
+      tableName: 'knex_migrations',
+    },
+  },
 };
