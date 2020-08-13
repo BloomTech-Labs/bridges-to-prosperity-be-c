@@ -27,14 +27,14 @@ module.exports = {
   //     seeds: { directory: '../data/seeds' },
   //   },
   development: {
-    client: "postgresql",
+    client: 'postgresql',
     connection: {
-      user: "postgres",
-      password: ""
+      user: 'postgres',
+      password: '',
     },
     migrations: {
       directory: '../data/migrations',
-      tableName: "knex_migrations"
-    }
+      tableName: 'knex_migrations',
+    },
   },
 };
