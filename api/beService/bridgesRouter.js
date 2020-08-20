@@ -17,7 +17,7 @@ router.get('/:id', (req, res) => {
   const { id } = req.params;
   Bridges.findById({ id })
     .then((bridge) => {
-      res.status(200).json({ bridge });
+      res.status(200).json(bridge);
     })
     .catch((err) => {
       console.log(err);
