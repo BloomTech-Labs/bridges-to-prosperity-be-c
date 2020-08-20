@@ -1,10 +1,9 @@
 const express = require('express');
 const router = express.Router();
-// const authRequired = require('../middleware/authRequired');
 const Users = require('./userModel');
-const authRequired = require('../middleware/authRequired');
+// const authRequired = require('../middleware/authRequired');
 
-router.get('/', authRequired, function (req, res) {
+router.get('/', (req, res) => {
   Users.find()
     .then((users) => {
       res.status(200).json({ users });
@@ -15,7 +14,7 @@ router.get('/', authRequired, function (req, res) {
     });
 });
 
-router.get('/:id', authRequired, function (req, res) {
+router.get('/:id', (req, res) => {
   const id = req.params.id;
 
   Users.findById(id)
@@ -30,3 +29,5 @@ router.get('/:id', authRequired, function (req, res) {
       res.status(500).json({ message: 'Failed to get user' });
     });
 });
+
+module.exports = router;

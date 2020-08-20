@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const Bridges = require('./bridgesModel');
-const authRequired = require('../middleware/authRequired');
+// const authRequired = require('../middleware/authRequired');
 
-router.get('/bridges', authRequired, (req, res) => {
+router.get('/bridges', (req, res) => {
   Bridges.findBridges()
     .then((bridges) => {
       res.status(200).json({ bridges });
@@ -13,7 +13,7 @@ router.get('/bridges', authRequired, (req, res) => {
     });
 });
 
-router.get('/bridges/:id', authRequired, (req, res) => {
+router.get('/bridges/:id', (req, res) => {
   const { id } = req.params;
   Bridges.findById({ id })
     .then((bridge) => {
@@ -25,3 +25,5 @@ router.get('/bridges/:id', authRequired, (req, res) => {
         .json({ errorMessage: `cannot get bridge by id at this time` });
     });
 });
+
+module.exports = router;
