@@ -1,8 +1,9 @@
 exports.up = (knex) => {
   return knex.schema.createTable('bridges', function (table) {
-    table.integer('projectcode').notNullable().unique().primary();
+    table.increments();
+    table.integer('projectcode').notNullable().unique();
     table.float('GPSLat').notNullable();
-    table.float('GPSlon').notNullable();
+    table.float('GPSLon').notNullable();
     table.string('country');
     table.string('province');
     table.string('district');
