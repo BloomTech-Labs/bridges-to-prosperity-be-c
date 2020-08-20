@@ -20,6 +20,7 @@ router.get('/bridges/:id', (req, res) => {
       res.status(200).json({ bridge });
     })
     .catch((err) => {
+      console.log(err);
       res
         .status(500)
         .json({ errorMessage: `cannot get bridge by id at this time` });
