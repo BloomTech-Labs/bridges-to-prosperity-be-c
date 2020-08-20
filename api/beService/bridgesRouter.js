@@ -2,10 +2,10 @@ const router = require('express').Router();
 const Bridges = require('./bridgesModel');
 // const authRequired = require('../middleware/authRequired');
 
-router.get('/bridges', (req, res) => {
+router.get('/', (req, res) => {
   Bridges.findBridges()
     .then((bridges) => {
-      res.status(200).json({ bridges });
+      res.status(200).json(bridges);
     })
     .catch((err) => {
       console.log(err);
@@ -13,7 +13,7 @@ router.get('/bridges', (req, res) => {
     });
 });
 
-router.get('/bridges/:id', (req, res) => {
+router.get('/:id', (req, res) => {
   const { id } = req.params;
   Bridges.findById({ id })
     .then((bridge) => {
