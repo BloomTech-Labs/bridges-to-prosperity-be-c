@@ -6,9 +6,11 @@ module.exports = {
 };
 
 function findBridges() {
-  return db('bridges')
-    .select('id', 'name', 'status', 'project-code', 'longitude', 'latitude')
-    .orderBy('id');
+  return (
+    db('bridges')
+      // .select('id', 'name', 'status', 'project-code', 'longitude', 'latitude')
+      .orderBy('id')
+  );
 }
 
 function findById(id) {
