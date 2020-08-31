@@ -4,13 +4,15 @@ dotenv.config({ path: '../.env' });
 module.exports = {
   development: {
     client: 'pg',
-    connection: process.env.DATABASE_URL,
-    migrations: { directory: '../data/migrations' },
-    seeds: { directory: '../data/seeds' },
-    pool: {
-      min: 2,
-      max: 10,
+    connection: {
+      user: 'postgres',
+      password: '',
     },
+    migrations: {
+      directory: '../data/migrations',
+      tableName: 'knex_migrations',
+    },
+    seeds: { directory: '../data/seeds' },
   },
 
   test: {
@@ -27,16 +29,16 @@ module.exports = {
     seeds: { directory: '../data/seeds' },
   },
 
-  local: {
-    client: 'pg',
-    connection: {
-      user: 'postgres',
-      password: '',
-    },
-    migrations: {
-      directory: '../data/migrations',
-      tableName: 'knex_migrations',
-    },
-    seeds: { directory: '../data/seeds' },
-  },
+  //   local: {
+  //     client: 'pg',
+  //     connection: {
+  //       user: 'postgres',
+  //       password: '',
+  //     },
+  //     migrations: {
+  //       directory: '../data/migrations',
+  //       tableName: 'knex_migrations',
+  //     },
+  //     seeds: { directory: '../data/seeds' },
+  //   },
 };
