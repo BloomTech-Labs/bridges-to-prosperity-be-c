@@ -1,7 +1,7 @@
 exports.up = (knex) => {
   return knex.schema.createTable('bridges', function (table) {
     table.increments();
-    table.integer('projectcode').notNullable().unique();
+    table.integer('project_code').notNullable().unique();
     table.string('bridge_name');
     table.string('bridge_type');
     table.float('latitude').notNullable();
