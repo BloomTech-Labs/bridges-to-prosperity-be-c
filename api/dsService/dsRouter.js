@@ -124,7 +124,7 @@ axios
   .then((resp) => {
     data = resp.data;
     data.forEach((e) => {
-      console.log(`${e.id}, ${e.bridge_name}`, `${e.bridge_type}`);
+      dsModel.add(e);
     });
   })
   .catch((error) => {
