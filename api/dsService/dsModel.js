@@ -11,7 +11,11 @@ const getViz = (state) => {
   return dsClient.get(`/viz/${state}`);
 };
 
-module.exports = { getPrediction, getViz, add };
+module.exports = { getPrediction, getViz, add, data };
+
+function data() {
+  return db('bridges');
+}
 
 function add(data) {
   return db('bridges').insert(
