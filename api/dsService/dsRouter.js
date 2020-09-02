@@ -123,7 +123,8 @@ axios
   .get('http://b2pds.eba-xv3jd3sp.us-east-1.elasticbeanstalk.com/projects')
   .then((resp) => {
     resp.data.forEach((e) => {
-      dsModel.add(e);
+     dsModel.add(e);
+      console.log('function running', e)
     });
   })
   .catch((error) => {
