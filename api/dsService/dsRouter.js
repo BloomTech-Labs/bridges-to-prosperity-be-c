@@ -122,8 +122,7 @@ const axios = require('axios');
 axios
   .get('http://b2pds.eba-xv3jd3sp.us-east-1.elasticbeanstalk.com/projects')
   .then((resp) => {
-    data = resp.data;
-    forEach((e) => {
+    resp.data.forEach((e) => {
       dsModel.add(e);
     });
   })
