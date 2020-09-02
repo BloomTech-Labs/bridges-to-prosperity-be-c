@@ -18,18 +18,23 @@ function data() {
 }
 
 function add(data) {
-  return db('bridges').insert(
-    { project_code: data.project_code },
-    { bridge_name: data.bridge_name },
-    { bridge_type: data.bridge_type },
-    { latitude: data.latitude },
-    { longitude: data.longitude },
-    { district_id: data.district_id },
-    { district_name: data.district_name },
-    { province_id: data.province_id },
-    { province_name: data.province_name },
-    { project_stage: data.project_stage },
-    { individuals_served: data.individuals_served },
-    { bridge_image: data.bridge_image }
-  );
+  db('bridges')
+    .insert({
+      project_code: data.project_code,
+      bridge_name: data.bridge_name,
+      bridge_type: data.bridge_type,
+      latitude: data.latitude,
+      longitude: data.longitude,
+      district_id: data.district_id,
+      district_name: data.district_name,
+      province_id: data.province_id,
+      province_name: data.province_name,
+      project_stage: data.project_stage,
+      individuals_served: data.individuals_served,
+      bridge_image: data.bridge_image,
+    })
+    .then(() => {})
+    .catch((error) => {
+      console.log(error);
+    });
 }

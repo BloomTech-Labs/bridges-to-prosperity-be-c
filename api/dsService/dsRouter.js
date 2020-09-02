@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const dsModel = require('./dsModel');
 const authRequired = require('../middleware/authRequired');
+const db = require('../../data/db-config');
+const knexCleaner = require('knex-cleaner');
 
 /**
  * @swagger
@@ -119,15 +121,20 @@ router.get('/viz/:state', authRequired, function (req, res) {
 
 const axios = require('axios');
 
+knexCleaner
+  .clean(db)
+  .then(function () {})
+  .catch((error) => {
+    console.log(error);
+  });
+
 axios
   .get('http://b2pds.eba-xv3jd3sp.us-east-1.elasticbeanstalk.com/projects')
   .then((resp) => {
     resp.data.forEach((e) => {
       dsModel.add(e);
+      console.log('function running', e);
     });
-  })
-  .catch((error) => {
-    console.log(error);
   });
 
 module.exports = router;
