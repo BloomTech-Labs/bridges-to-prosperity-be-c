@@ -121,7 +121,12 @@ router.get('/viz/:state', authRequired, function (req, res) {
 
 const axios = require('axios');
 
-knexCleaner.clean(db).then(function () {});
+knexCleaner
+  .clean(db)
+  .then(function () {})
+  .catch((error) => {
+    console.log(error);
+  });
 
 axios
   .get('http://b2pds.eba-xv3jd3sp.us-east-1.elasticbeanstalk.com/projects')
