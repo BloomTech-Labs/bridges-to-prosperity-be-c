@@ -131,9 +131,5 @@ axios
       console.log('function running', e);
     });
   });
-console.log('insert');
-// .catch((error) => {
-//   console.log(error);
-// });
 
 module.exports = router;
