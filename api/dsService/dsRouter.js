@@ -3,7 +3,6 @@ const router = express.Router();
 const dsModel = require('./dsModel');
 const authRequired = require('../middleware/authRequired');
 const db = require('../../data/db-config');
-const knex = require('knex');
 const knexCleaner = require('knex-cleaner');
 
 /**
