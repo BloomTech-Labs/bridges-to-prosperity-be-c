@@ -6,12 +6,12 @@ exports.up = (knex) => {
     table.string('bridge_type');
     table.float('latitude').notNullable();
     table.float('longitude').notNullable();
-    table.string('district_id');
+    table.integer('district_id');
     table.string('district_name');
-    table.string('province_id');
+    table.integer('province_id');
     table.string('province_name');
     table.string('project_stage');
-    table.string('individuals_served');
+    table.integer('individuals_served');
     table.string('bridge_image');
   });
 };
