@@ -1,3 +1,7 @@
+### https://youtu.be/fYHp5s21uws --- Stakeholder Demo at end of Labs25
+### https://youtu.be/yhBqqsxCLm4 --- Demo for Labs27 Team
+
+
 # Basic node API
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/65e3a684cd28554d0383/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/labs-api-starter/maintainability)
