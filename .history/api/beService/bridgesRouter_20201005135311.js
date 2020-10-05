@@ -27,24 +27,4 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.put('/:id', (req, res) => {
-  Bridges.findById(req.params.id)
-      .then(item => {
-          if (item) {
-              Bridges.update(req.body, req.params.id)
-                  .then(changed => {
-                      res.status(200).json(changed);
-                  })
-                  .catch(err => {
-                      res.status(500).json(err);
-                  })
-          } else {
-              res.status(404).json({ error: 'item could not be found' });
-          }
-      })
-      .catch(err => {
-          res.status(500).json(err);
-      })
-})
-
 module.exports = router;

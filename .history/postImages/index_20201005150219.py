@@ -2,5 +2,5 @@ import pandas as pd
  
 
 df = pd.read_csv("bridgeData3.csv")
-
-print(df.iloc[2,0:5])
+df.iloc[0]
+print(df)

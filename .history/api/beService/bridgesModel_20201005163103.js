@@ -16,10 +16,3 @@ function findBridges() {
 function findById(id) {
   return db('bridges').where(id);
 }
-
-function update(changes, id) {
-  return db('bridges').where({ id }).update(changes)
-      .then(() => {
-          return findById(id);
-      })
-}
