@@ -1,6 +1,7 @@
-const fs = require('fs');
 const data = require('./results.json')
 
 const obj = JSON.parse(JSON.stringify(data))
 
-module.exports = obj
+x = Object.values(obj)
+console.log(x)
+module.exports = x
