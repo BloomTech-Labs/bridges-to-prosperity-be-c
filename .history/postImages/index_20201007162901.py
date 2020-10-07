@@ -56,8 +56,7 @@ for i in finCsv:
             if type(val) != int:
                 val = 0
         if key.lower() == 'sector_id':
-            if type(val) == str:
-                val = 0
+            if type
         finalObj[id][key.lower()] = val
             
 # Create a JSON file
