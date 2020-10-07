@@ -5,10 +5,7 @@ dotenv.config({ path: '../.env' });
 module.exports = {
   development: {
     client: 'pg',
-    connection: {
-      user: 'postgres',
-      password: '',
-    },
+    connection: "postgresql://postgres@localhost/Bridges",
     migrations: {
       directory: '../data/migrations',
       tableName: 'knex_migrations',

@@ -1,6 +1,6 @@
 exports.up = (knex) => {
   return knex.schema.createTable('bridges', function (table) {
-    table.increments();
+    // table.increments();
     table.integer('project_code').notNullable().unique();
     table.string('after_img');
     table.string('before_img');
