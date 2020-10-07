@@ -192,7 +192,7 @@
         "assessment_date": "2018-11-15",
         "original_community_col": "Community Served 5",
         "community_served": "\"Gahira cell",
-        "prov_id": "karama sector and kayenzi\"",
+        "prov_id": 0,
         "district_id": 2,
         "sector_id": 28,
         "cell_id": 2801
@@ -808,7 +808,7 @@
         "assessment_date": "2018-11-24",
         "original_community_col": "Community Served 4",
         "community_served": "\"Karenge 1& 2",
-        "prov_id": "gashasha\"",
+        "prov_id": 0,
         "district_id": 5,
         "sector_id": 55,
         "cell_id": 5509
@@ -4944,7 +4944,7 @@
         "assessment_date": "2018-09-16",
         "original_community_col": "Community Served 5",
         "community_served": "\"Shonero",
-        "prov_id": "kamata\"",
+        "prov_id": 0,
         "district_id": 4,
         "sector_id": 43,
         "cell_id": 4310
@@ -5714,7 +5714,7 @@
         "assessment_date": "2018-09-16",
         "original_community_col": "Community Served 5",
         "community_served": "\"Cyanya",
-        "prov_id": "gasenyi\"",
+        "prov_id": 0,
         "district_id": 4,
         "sector_id": 43,
         "cell_id": 4303
@@ -5758,7 +5758,7 @@
         "assessment_date": "2018-09-16",
         "original_community_col": "Community Served 5",
         "community_served": "\"Mpiriza",
-        "prov_id": "kareba\"",
+        "prov_id": 0,
         "district_id": 4,
         "sector_id": 43,
         "cell_id": 3512
@@ -8838,7 +8838,7 @@
         "assessment_date": "2018-09-24",
         "original_community_col": "Community Served 3",
         "community_served": "\"Mutiwingoma cell(Nyamirama",
-        "prov_id": "Muduha and Kabuga villages)\"",
+        "prov_id": 0,
         "district_id": 2,
         "sector_id": 25,
         "cell_id": 2507
@@ -10620,7 +10620,7 @@
         "assessment_date": "2018-10-14",
         "original_community_col": "Community Served 4",
         "community_served": "\"Kanyege",
-        "prov_id": "rugote\"",
+        "prov_id": 0,
         "district_id": 3,
         "sector_id": 37,
         "cell_id": 3706
@@ -10972,7 +10972,7 @@
         "assessment_date": "2018-09-09",
         "original_community_col": "Community Served 5",
         "community_served": "\"Runyenyeli",
-        "prov_id": "Buhemba and Mariba\"",
+        "prov_id": 0,
         "district_id": 4,
         "sector_id": 44,
         "cell_id": 4407
@@ -11038,7 +11038,7 @@
         "assessment_date": "2018-09-09",
         "original_community_col": "Community Served 5",
         "community_served": "\"Murambi",
-        "prov_id": "Gatovu",
+        "prov_id": 0,
         "district_id": "Mucaca",
         "sector_id": "Ntazi",
         "cell_id": "Kirambo\""
@@ -11060,7 +11060,7 @@
         "assessment_date": "2018-09-09",
         "original_community_col": "Community Served 5",
         "community_served": "\"Mutungo",
-        "prov_id": "Gitaba",
+        "prov_id": 0,
         "district_id": "Nyakabingo",
         "sector_id": "Kagano\"",
         "cell_id": 4
@@ -12028,7 +12028,7 @@
         "assessment_date": "2018-10-21",
         "original_community_col": "Community Served 5",
         "community_served": "\"Kirambi",
-        "prov_id": "kanoga",
+        "prov_id": 0,
         "district_id": "kibumba\"",
         "sector_id": 3,
         "cell_id": 36
@@ -12688,7 +12688,7 @@
         "assessment_date": "2018-08-25",
         "original_community_col": "Community Served 5",
         "community_served": "\"Tubuye",
-        "prov_id": "mutengeli\"",
+        "prov_id": 0,
         "district_id": 2,
         "sector_id": 25,
         "cell_id": 2515
@@ -12842,7 +12842,7 @@
         "assessment_date": "2018-08-25",
         "original_community_col": "Community Served 5",
         "community_served": "\"Bishyiga",
-        "prov_id": "rukeri\"",
+        "prov_id": 0,
         "district_id": 2,
         "sector_id": 25,
         "cell_id": 2513
@@ -12908,7 +12908,7 @@
         "assessment_date": "2018-08-25",
         "original_community_col": "Community Served 5",
         "community_served": "\"Kavumu",
-        "prov_id": "rugogwe\"",
+        "prov_id": 0,
         "district_id": 2,
         "sector_id": 25,
         "cell_id": 2515
@@ -13590,7 +13590,7 @@
         "assessment_date": "2018-10-21",
         "original_community_col": "Community Served 5",
         "community_served": "\"Kamabuye",
-        "prov_id": "karorabose",
+        "prov_id": 0,
         "district_id": "what's she",
         "sector_id": "munyove\"",
         "cell_id": 3
@@ -15240,7 +15240,7 @@
         "assessment_date": "2018-10-14",
         "original_community_col": "Community Served 5",
         "community_served": "\"Rutiritiri",
-        "prov_id": "kizingwa\"",
+        "prov_id": 0,
         "district_id": 3,
         "sector_id": 37,
         "cell_id": 3713
@@ -17572,7 +17572,7 @@
         "assessment_date": "2018-10-27",
         "original_community_col": "Community Served 5",
         "community_served": "\"Gacuzi",
-        "prov_id": "Runyinya\"",
+        "prov_id": 0,
         "district_id": 3,
         "sector_id": 37,
         "cell_id": 3714
@@ -17858,7 +17858,7 @@
         "assessment_date": "2018-10-27",
         "original_community_col": "Community Served 4",
         "community_served": "\"Rubona",
-        "prov_id": "Muganza\"",
+        "prov_id": 0,
         "district_id": 3,
         "sector_id": 37,
         "cell_id": 5104
@@ -20454,7 +20454,7 @@
         "assessment_date": "2018-11-15",
         "original_community_col": "Community Served 3",
         "community_served": "\"Mbizi",
-        "prov_id": "kigarama\"",
+        "prov_id": 0,
         "district_id": 2,
         "sector_id": 28,
         "cell_id": 2801
@@ -20960,7 +20960,7 @@
         "assessment_date": "2018-08-16",
         "original_community_col": "Community Served 5",
         "community_served": "\"Bukongi",
-        "prov_id": "Marebe",
+        "prov_id": 0,
         "district_id": "sakara\"",
         "sector_id": 4,
         "cell_id": 41
@@ -21884,7 +21884,7 @@
         "assessment_date": "2018-09-04",
         "original_community_col": "Community Served 5",
         "community_served": "\"Kirehe",
-        "prov_id": "kivumu\"",
+        "prov_id": 0,
         "district_id": 2,
         "sector_id": 25,
         "cell_id": 2505
@@ -24128,7 +24128,7 @@
         "assessment_date": "2018-09-04",
         "original_community_col": "Community Served 5",
         "community_served": "\"Kibumba",
-        "prov_id": "\"",
+        "prov_id": 0,
         "district_id": 2,
         "sector_id": 25,
         "cell_id": 2407
@@ -24348,7 +24348,7 @@
         "assessment_date": "2018-08-17",
         "original_community_col": "Community Served 5",
         "community_served": "\"Mean a",
-        "prov_id": "Shyondwe\"",
+        "prov_id": 0,
         "district_id": 4,
         "sector_id": 41,
         "cell_id": 4114
@@ -28902,7 +28902,7 @@
         "assessment_date": "2018-09-23",
         "original_community_col": "Community Served 5",
         "community_served": "\"Gaseke",
-        "prov_id": "Munini\"",
+        "prov_id": 0,
         "district_id": 3,
         "sector_id": 37,
         "cell_id": 3707

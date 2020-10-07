@@ -50,8 +50,8 @@ for i in finCsv:
         except ValueError:
             val = val
         if key.lower() =='prov_id':
-            if type(val) != int:
-                val = 000000
+            if type(val) !== int:
+                val 
         finalObj[id][key.lower()] = val
             
 # Create a JSON file

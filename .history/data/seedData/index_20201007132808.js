@@ -1,7 +1,5 @@
+const fs = require('fs');
 const data = require('./results.json')
 
 const obj = JSON.parse(JSON.stringify(data))
-
-const y = Object.values(obj)
-
-// module.exports = obj
+module.exports = obj

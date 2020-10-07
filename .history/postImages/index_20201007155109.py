@@ -45,13 +45,12 @@ for i in finCsv:
         # 11 is the posistion of unNeeded information
         if i == 11:
             continue
+        if key.lower() =='prov_id':
         try:
             val = int(val)
         except ValueError:
             val = val
-        if key.lower() =='prov_id':
-            if type(val) != int:
-                val = 000000
+        
         finalObj[id][key.lower()] = val
             
 # Create a JSON file
