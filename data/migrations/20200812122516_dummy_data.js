@@ -7,12 +7,13 @@ exports.up = (knex) => {
     table.float('latitude').notNullable();
     table.float('longitude').notNullable();
     table.integer('district_id');
-    table.string('district_name');
+    table.string('district');
     table.integer('province_id');
-    table.string('province_name');
+    table.string('province');
     table.string('project_stage');
     table.integer('individuals_served');
     table.string('bridge_image');
+    table.string('')
   });
 };
 
