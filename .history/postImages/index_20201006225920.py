@@ -25,11 +25,7 @@ for i in finCsv:
     if id in obj:
         # Add those images to final object..
         finalObj[id]['before_img'] = obj[id]['before_img']
-        finalObj[id]['after_img']  = obj[id]['after_img'][0:-1]
-    else:
-        finalObj[id]['after_img'] =None
-        finalObj[id]['before_img'] =None
-        
+        finalObj[id]['after_img'] = obj[id]['after_img'][0:-1]
     # loop therough the header of the full csv for all of the key titles..
     for i in range(len(row)):
         key = row[i].replace(' ',"_")

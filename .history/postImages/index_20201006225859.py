@@ -25,11 +25,7 @@ for i in finCsv:
     if id in obj:
         # Add those images to final object..
         finalObj[id]['before_img'] = obj[id]['before_img']
-        finalObj[id]['after_img']  = obj[id]['after_img'][0:-1]
-    else:
-        finalObj[id]['after_img'] =None
-        finalObj[id]['before_img'] =None
-        
+        finalObj[id]['after_img'] = obj[id]['after_img'][0:-1]
     # loop therough the header of the full csv for all of the key titles..
     for i in range(len(row)):
         key = row[i].replace(' ',"_")
@@ -53,7 +49,7 @@ for i in finCsv:
         finalObj[id][key.lower()] = val
             
 # Create a JSON file
-with open('../data/seedData/results.json','w') as fp:
+with open('../results.json','w') as fp:
     # Dump the object into the json file
     json.dump(finalObj,fp,indent=4)
 # Print on Complete on finish 

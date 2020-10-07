@@ -6,6 +6,6 @@ exports.seed = function (knex) {
     .del()
     .then(function () {
       // Inserts seed entries
-      return knex('bridges').insert([seedData]);
+      return knex('bridges').insert([seed]);
     });
 };

@@ -1,11 +1,10 @@
-const seedData = require('../seedData')
-console.log(seedData)
+const seedData = require('../')
 exports.seed = function (knex) {
   // Deletes ALL existing entries
   return knex('bridges')
     .del()
     .then(function () {
       // Inserts seed entries
-      return knex('bridges').insert([seedData]);
+      return knex('bridges').insert([]);
     });
 };
