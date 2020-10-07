@@ -54,7 +54,7 @@ for i in finCsv:
                 val = 000000
         if key.lower() == 'district_id':
             if type(val) != int:
-                val = 0
+                val = 
         finalObj[id][key.lower()] = val
             
 # Create a JSON file

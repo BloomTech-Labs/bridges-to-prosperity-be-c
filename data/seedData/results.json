@@ -11039,7 +11039,7 @@
         "original_community_col": "Community Served 5",
         "community_served": "\"Murambi",
         "prov_id": 0,
-        "district_id": "Mucaca",
+        "district_id": 0,
         "sector_id": "Ntazi",
         "cell_id": "Kirambo\""
     },
@@ -11061,7 +11061,7 @@
         "original_community_col": "Community Served 5",
         "community_served": "\"Mutungo",
         "prov_id": 0,
-        "district_id": "Nyakabingo",
+        "district_id": 0,
         "sector_id": "Kagano\"",
         "cell_id": 4
     },
@@ -12029,7 +12029,7 @@
         "original_community_col": "Community Served 5",
         "community_served": "\"Kirambi",
         "prov_id": 0,
-        "district_id": "kibumba\"",
+        "district_id": 0,
         "sector_id": 3,
         "cell_id": 36
     },
@@ -13591,7 +13591,7 @@
         "original_community_col": "Community Served 5",
         "community_served": "\"Kamabuye",
         "prov_id": 0,
-        "district_id": "what's she",
+        "district_id": 0,
         "sector_id": "munyove\"",
         "cell_id": 3
     },
@@ -20961,7 +20961,7 @@
         "original_community_col": "Community Served 5",
         "community_served": "\"Bukongi",
         "prov_id": 0,
-        "district_id": "sakara\"",
+        "district_id": 0,
         "sector_id": 4,
         "cell_id": 41
     },
