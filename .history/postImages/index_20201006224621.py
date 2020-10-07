@@ -14,10 +14,11 @@ for i in finalCsv:
 # create a final object
 finalObj = {}
 # check full csv
+
 for i in finCsv:
     x = i.split(',')
     id = x[6]
-    # create an object with the key of the id regardless
+# create an object with the key of the id regardless
     finalObj[id]= {}
     row = fin[0].split(',')
     
@@ -52,5 +53,5 @@ for i in finCsv:
 with open('results.json','w') as fp:
     # Dump the object into the json file
     json.dump(finalObj,fp,indent=4)
-# Print on Complete on finish 
+    
 print('COMPLETE')

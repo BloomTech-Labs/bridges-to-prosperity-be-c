@@ -52,5 +52,5 @@ for i in finCsv:
 with open('results.json','w') as fp:
     # Dump the object into the json file
     json.dump(finalObj,fp,indent=4)
-# Print on Complete on finish 
+# 
 print('COMPLETE')

@@ -14,19 +14,20 @@ for i in finalCsv:
 # create a final object
 finalObj = {}
 # check full csv
+
 for i in finCsv:
     x = i.split(',')
     id = x[6]
-    # create an object with the key of the id regardless
+# create an object with the key of the id regardless
     finalObj[id]= {}
     row = fin[0].split(',')
     
     # if the id has an image add it to the final object
     if id in obj:
-        # Add those images to final object..
+    # Add those images to final object..
         finalObj[id]['before_img'] = obj[id]['before_img']
         finalObj[id]['after_img'] = obj[id]['after_img'][0:-1]
-    # loop therough the header of the full csv for all of the key titles..
+
     for i in range(len(row)):
         key = row[i].replace(' ',"_")
         key = key.strip()
@@ -41,6 +42,7 @@ for i in finCsv:
         # 11 is the posistion of unNeeded information
         if i == 11:
             continue
+        
         try:
             val = int(val)
         except ValueError:
@@ -48,9 +50,7 @@ for i in finCsv:
         
         finalObj[id][key.lower()] = val
             
-# Create a JSON file
+print(finalObj['1013351'])
+    
 with open('results.json','w') as fp:
-    # Dump the object into the json file
     json.dump(finalObj,fp,indent=4)
-# Print on Complete on finish 
-print('COMPLETE')
