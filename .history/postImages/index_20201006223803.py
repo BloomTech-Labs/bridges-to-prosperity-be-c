@@ -1,0 +1,62 @@
+import csv
+import json
+df = open("bridgeData3.csv",'r').readlines()
+fin = open('final.csv','r').readlines()
+# Skips the header of the csv
+finCsv = fin[1:]
+finalCsv = df[1:]
+
+obj = {}
+# loop through the csv with images
+for i in finalCsv:
+    x = i.split(',')
+    obj[x[1]] = {'bridge_name':x[0],'proj_code':x[1],'before_img':x[2],'after_img':x[3][0:-1]}
+# create a final object
+finalObj = {}
+# check full csv
+
+for i in finCsv:
+    x = i.split(',')
+    id = x[6]
+# create an object with the key of the id regardless
+    finalObj[id]= {}
+    row = fin[0].split(',')
+    
+    # if the id has an image add it to the final object
+    if id in obj:
+        
+        finalObj[id]['before_img'] = obj[id]['before_img']
+        finalObj[id]['after_img'] = obj[id]['after_img'][0:-1]
+    for i in range(len(row)):
+        key = row[i].replace(' ',"_")
+        key = key.strip()
+        val = x[i].strip()
+        
+        # 8 is the position of the latitude 
+        if i == 8:
+            key = 'latitude'
+            # val = float(val)
+        # 9 is the position of the  
+            
+        if i == 9:
+            key = 'longitude'
+            # val = float(val)
+        if i == 11:
+            
+            continue
+        
+        
+        try:
+            val = int(val)
+        except ValueError:
+            val = val
+        
+        finalObj[id][key.lower()] = val
+            
+            
+        
+        
+print(finalObj['1013351'])
+    
+with open('results.json','w') as fp:
+    json.dump(finalObj,fp,indent=4)

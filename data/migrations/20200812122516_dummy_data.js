@@ -1,18 +1,27 @@
 exports.up = (knex) => {
   return knex.schema.createTable('bridges', function (table) {
-    table.increments();
+    // table.increments();
     table.integer('project_code').notNullable().unique();
-    table.string('bridge_name');
-    table.string('bridge_type');
-    table.float('latitude').notNullable();
-    table.float('longitude').notNullable();
-    table.integer('district_id');
-    table.string('district_name');
-    table.integer('province_id');
-    table.string('province_name');
+    table.string('after_img');
+    table.string('before_img');
+    table.string('province');
+    table.string('district');
+    table.string('sector');
+    table.string('cell');
+    table.string('bridge_site_name');
     table.string('project_stage');
-    table.integer('individuals_served');
-    table.string('bridge_image');
+    table.string('bridge_type');
+    table.string('latitude');
+    table.string('longitude');
+    table.string('individuals_directly_served');
+    table.string('assessment_date');
+    table.string('original_community_col');
+    table.string('community_served');
+    table.integer('prov_id');
+    table.integer('district_id');
+    table.integer('sector_id');
+    table.integer('cell_id');
+
   });
 };
 

@@ -1,0 +1,1 @@
+const d = require('./index')
