@@ -12,7 +12,7 @@ exports.up = (knex) => {
     table.string('project_stage');
     table.string('bridge_type');
     table.float('latitude');
-    table.float('longitude');
+    table.string('longitude');
     table.string('individuals_directly_served');
     table.string('assessment_date');
     table.string('original_community_col');

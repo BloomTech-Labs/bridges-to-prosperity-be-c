@@ -43,7 +43,7 @@ for i in finCsv:
             try:
                 val = float(val)
             except ValueError:
-                val = 0
+                val = None
             
         if i == 9:
             key = 'longitude'
@@ -55,24 +55,20 @@ for i in finCsv:
         # 11 is the posistion of unNeeded information
         if i == 11:
             continue
-        
-        if type(val) != float :
+        if type(val) != int or val != None:
             try:
                 val = int(val)
             except ValueError:
                 val = val
         if key.lower() =='prov_id':
             if type(val) != int:
-                val = None
+                val = 000000
         if key.lower() == 'district_id':
             if type(val) != int:
-                val = None
+                val = 0
         if key.lower() == 'sector_id':
-            if type(val) != int:
-                val = None
-        if key.lower() == 'cell_id':
-            if type(val) != int:
-                val = None
+            if type(val) == str:
+                val = 0
         finalObj[id][key.lower()] = val
             
 # Create a JSON file
