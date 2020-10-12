@@ -1,5 +1,5 @@
-const seedData = require('../seedData')
-console.log(seedData)
+const seedData = require('../seedData');
+console.log(seedData);
 exports.seed = function (knex) {
   // Deletes ALL existing entries
   return knex('bridges')

@@ -21,7 +21,6 @@ exports.up = (knex) => {
     table.integer('district_id');
     table.integer('sector_id');
     table.integer('cell_id');
-
   });
 };
 
