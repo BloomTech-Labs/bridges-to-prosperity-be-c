@@ -17,6 +17,4 @@ function findById(id) {
   return db('bridges').where(id);
 }
 
-function update(id,item) {
-
-}
+function update(id, item) {}

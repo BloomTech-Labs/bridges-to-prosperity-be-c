@@ -16,4 +16,3 @@ function findBridges() {
 function findById(id) {
   return db('bridges').where(id);
 }
-

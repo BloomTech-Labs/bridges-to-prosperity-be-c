@@ -13,7 +13,7 @@ exports.up = (knex) => {
     table.string('project_stage');
     table.integer('individuals_served');
     table.string('bridge_image');
-    table.string('')
+    table.string('');
   });
 };
 

@@ -18,8 +18,10 @@ function findById(id) {
 }
 
 function update(changes, id) {
-  return db('bridges').where({ id }).update(changes)
-      .then(() => {
-          return findById(id);
-      })
+  return db('bridges')
+    .where({ id })
+    .update(changes)
+    .then(() => {
+      return findById(id);
+    });
 }
