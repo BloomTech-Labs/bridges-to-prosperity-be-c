@@ -3,7 +3,7 @@ const db = require('../../data/db-config');
 module.exports = {
   findBridges,
   findById,
-  update,
+  update
 };
 
 function findBridges() {
