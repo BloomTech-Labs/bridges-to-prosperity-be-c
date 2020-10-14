@@ -10,19 +10,21 @@ function findBridges() {
   return (
     db('bridges')
       // .select('id', 'name', 'status', 'project-code', 'longitude', 'latitude')
-      .orderBy('id')
+      .orderBy('project_code')
   );
 }
 
-function findById(id) {
-  return db('bridges').where(id);
+function findById(project_code) {
+  return db('bridges').where(project_code);
 }
 
-function update(changes, id) {
+
+function update(changes, project_code) {
   return db('bridges')
-    .where({ id })
+    .where({ project_code })
     .update(changes)
     .then(() => {
-      return findById(id);
+      return findById(project_code);
+
     });
 }
