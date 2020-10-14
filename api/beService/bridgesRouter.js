@@ -27,6 +27,16 @@ router.get('/:id', (req, res) => {
     });
 });
 
+router.post('/', (req, res) => {
+  Bridges.add(req.body)
+    .then(proj => {
+      res.status(201).json(proj);
+    })
+    .catch(err => {
+      res.status(500).json(err)
+    })
+});
+
 router.put('/:id', (req, res) => {
   Bridges.findById(req.params.id)
     .then((item) => {

@@ -3,6 +3,7 @@ const db = require('../../data/db-config');
 module.exports = {
   findBridges,
   findById,
+  add,
   update,
 };
 
@@ -16,6 +17,11 @@ function findBridges() {
 
 function findById(project_code) {
   return db('bridges').where(project_code);
+}
+
+async function add(project) {
+  const [id] = await db('bridges').insert(project)
+  return findById(id);
 }
 
 function update(changes, project_code) {
