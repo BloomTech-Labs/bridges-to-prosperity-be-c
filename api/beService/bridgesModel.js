@@ -30,5 +30,6 @@ function update(changes, project_code) {
     .update(changes)
     .then(() => {
       return findById(project_code);
+
     });
 }
