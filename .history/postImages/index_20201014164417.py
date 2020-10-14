@@ -25,7 +25,6 @@ for i in finCsv:
     if id in obj:
         # Add those images to final object..
         finalObj[id]['before_img'] = obj[id]['before_img']
-        # fixed problem
         finalObj[id]['after_img']  = obj[id]['after_img']
     else:
         finalObj[id]['after_img'] =None

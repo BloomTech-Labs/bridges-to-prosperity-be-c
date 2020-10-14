@@ -3,28 +3,26 @@ const db = require('../../data/db-config');
 module.exports = {
   findBridges,
   findById,
-  update,
+  update
 };
 
 function findBridges() {
   return (
     db('bridges')
       // .select('id', 'name', 'status', 'project-code', 'longitude', 'latitude')
-      .orderBy('project_code')
+      .orderBy('id')
   );
 }
 
-function findById(project_code) {
-  return db('bridges').where(project_code);
+function findById(id) {
+  return db('bridges').where(id);
 }
 
-
-function update(changes, project_code) {
+function update(changes, id) {
   return db('bridges')
-    .where({ project_code })
+    .where({ id })
     .update(changes)
     .then(() => {
-      return findById(project_code);
-
+      return findById(id);
     });
 }
