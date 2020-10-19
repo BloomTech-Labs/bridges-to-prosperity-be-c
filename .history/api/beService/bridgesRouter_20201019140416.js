@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 
 router.get('/:project_code', (req, res) => {
   const { project_code } = req.params;
-  Bridges.findById(project_code)
+  Bridges.findById({ project_code })
     .then((bridge) => {
       res.status(200).json(bridge);
     })
@@ -30,10 +30,10 @@ router.get('/:project_code', (req, res) => {
 router.post('/', (req, res) => {
   Bridges.add(req.body)
     .then((proj) => {
-      res.status(200).json(proj);
+      res.status(201).json(proj);
     })
     .catch((err) => {
-      res.status(500).json({ Error: `${err}` });
+      res.status(500).json(err);
     });
 });
 
