@@ -16,12 +16,12 @@ function findBridges() {
 }
 
 function findById(project_code) {
-  return db('bridges').where({ project_code });
+  return db('bridges').where(project_code);
 }
 
-async function add(project) {
-  const [id] = await db('bridges').insert(project);
-  return findById(id);
+async function add(project_code) {
+  await db('bridges').insert(project_code);
+  return findById(project_code);
 }
 
 function update(changes, project_code) {
