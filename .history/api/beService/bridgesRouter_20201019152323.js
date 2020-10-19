@@ -14,8 +14,8 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:project_code', (req, res) => {
-  const {project_code } = req.params;
-  Bridges.findById(project_code);
+  const { project_code } = req.params;
+  Bridges.findById({ project_code })
     .then((bridge) => {
       res.status(200).json(bridge);
     })
