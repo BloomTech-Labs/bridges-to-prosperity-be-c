@@ -35,5 +35,7 @@ function update(changes, project_code) {
 }
 
 function getImgs() {
-  return db('bridges').select('before_img', 'after_img').whereNotNull();
+  return db('bridges')
+    .select('before_img', 'after_img')
+    .whereNotNull('before_img', 'after_img');
 }
