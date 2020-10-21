@@ -12,11 +12,6 @@ router.get('/', (req, res) => {
       res.status(500).json({ message: 'Failed to get Bridges' });
     });
 });
-router.get('/0/imgs', (req, res) => {
-  Bridges.getImgs()
-    .then((result) => res.status(200).json(result))
-    .catch((err) => res.status(500).json(err));
-});
 
 router.get('/:project_code', (req, res) => {
   const { project_code } = req.params;
@@ -62,4 +57,11 @@ router.put('/:id', (req, res) => {
     });
 });
 
+router.get('/imgs', (req, res) => {
+  Bridges.findBridges()
+    .select('befere_img', 'after_img')
+    .whereNotNull()
+    .then((result) => res.status(200).json(result))
+    .catch((err) => res.status(500).json(err));
+});
 module.exports = router;

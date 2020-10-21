@@ -5,7 +5,6 @@ module.exports = {
   findById,
   add,
   update,
-  getImgs,
 };
 
 function findBridges() {
@@ -36,6 +35,14 @@ function update(changes, project_code) {
 
 function getImgs() {
   return db('bridges')
-    .select('before_img', 'after_img')
-    .whereNotNull('before_img', 'after_img');
+    .whereNotNull('before_images')
+    .then(before => {
+      db('bridges')
+        .whereNotNull('after_images')
+        .then(after => {
+        retrun ({before,after}))
+    })
+})
+    
+  
 }

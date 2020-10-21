@@ -13,7 +13,9 @@ router.get('/', (req, res) => {
     });
 });
 router.get('/0/imgs', (req, res) => {
-  Bridges.getImgs()
+  Bridges.findBridges()
+    .select('befere_img', 'after_img')
+    .whereNotNull()
     .then((result) => res.status(200).json(result))
     .catch((err) => res.status(500).json(err));
 });
