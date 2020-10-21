@@ -57,9 +57,5 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.get('/imgs', (req, res) => {
-  Bridges.getImgs()
-    .then((results) => res.status(200).json(results))
-    .catch((err) => res.status(500).json(err));
-});
+router.get('/imgs', (req, res) => {});
 module.exports = router;

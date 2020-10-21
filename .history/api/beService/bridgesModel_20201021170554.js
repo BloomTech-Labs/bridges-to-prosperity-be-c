@@ -5,7 +5,6 @@ module.exports = {
   findById,
   add,
   update,
-  getImgs,
 };
 
 function findBridges() {
