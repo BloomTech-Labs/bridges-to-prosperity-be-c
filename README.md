@@ -1,6 +1,4 @@
-### https://youtu.be/fYHp5s21uws --- Stakeholder Demo at end of Labs25
-
-### https://youtu.be/yhBqqsxCLm4 --- Demo for Labs27 Team
+### [Labs 27 Project Recap](https://lambdaschool.zoom.us/rec/play/8ZVyyzvYTlrnud49pFPws1gTtPiL6IyhEeScATKSJnFnk3KtNatYnzngK6EiZGdTIVDkujUMXPYVi_N5.LZXOz6Mx47_BOCJ7?continueMode=true&_x_zm_rtaid=RYJngbupThKuaygAaN73Qg.1603402120788.aa29def177d62eb2a8bb235399fda9a9&_x_zm_rhtaid=640 'Canvas Video') --- Demo for Next Team
 
 # Basic node API
 
