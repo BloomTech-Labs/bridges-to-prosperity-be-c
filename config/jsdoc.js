@@ -22,7 +22,11 @@ module.exports = {
       },
       {
         name: 'data',
-        description: 'Operations for data science service',
+        description: 'CURRENTLY UNAVAILABLE',
+      },
+      {
+        name: 'bridges',
+        description: 'Operations for our current Bridges Data',
       },
     ],
     externalDocs: {
@@ -64,5 +68,5 @@ module.exports = {
       },
     },
   },
-  apis: ['./api/**/*Router.js'],
+  apis: ['./api/*/*Router.js'],
 };
