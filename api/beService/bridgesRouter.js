@@ -12,6 +12,7 @@ router.get('/', (req, res) => {
       res.status(500).json({ message: 'Failed to get Bridges' });
     });
 });
+
 router.get('/0/imgs', (req, res) => {
   Bridges.getImgs()
     .then((result) => res.status(200).json(result))
