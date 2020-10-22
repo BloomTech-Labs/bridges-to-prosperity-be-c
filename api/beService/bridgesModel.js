@@ -9,20 +9,16 @@ module.exports = {
 };
 
 function findBridges() {
-  return (
-    db('bridges')
-      // .select('id', 'name', 'status', 'project-code', 'longitude', 'latitude')
-      .orderBy('project_code')
-  );
+  return db('bridges').orderBy('project_code');
 }
 
 function findById(project_code) {
-  return db('bridges').where(project_code);
+  return db('bridges').where({ project_code });
 }
 
-async function add(project_code) {
-  await db('bridges').insert(project_code);
-  return findById(project_code);
+async function add(bridge) {
+  await db('bridges').insert(bridge);
+  return findById(bridge.project_code);
 }
 
 function update(changes, project_code) {
